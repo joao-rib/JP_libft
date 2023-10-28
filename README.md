@@ -3,7 +3,7 @@
 ## Replicas of <ctype.h>
 
 Function | Format | Description | Status
---- | --- | ---
+--- | --- | --- | ---
 ft_isalpha | `int	ft_isalpha(int c)` | Check if character c (int format) is alphabetic | OK
 int	isdigit(int c) | Check if character c (int format) is numeric | OK
 int	isalnum(int c) | Check if character c (int format) is alphanumeric | OK
