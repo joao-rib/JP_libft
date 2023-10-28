@@ -2,9 +2,9 @@
 
 ## Replicas of <ctype.h>
 
-Function format | Description | Status
+Function | Format | Description | Status
 --- | --- | ---
-`int	isalpha(int c)` | Check if character c (int format) is alphabetic | OK
+ft_isalpha | `int	ft_isalpha(int c)` | Check if character c (int format) is alphabetic | OK
 int	isdigit(int c) | Check if character c (int format) is numeric | OK
 int	isalnum(int c) | Check if character c (int format) is alphanumeric | OK
 int	isascii(int c) | Check if character c (int format) is ASCII | OK
