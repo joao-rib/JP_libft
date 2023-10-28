@@ -4,7 +4,7 @@
 
 Function format | Description | Status
 --- | --- | ---
-'int	isalpha(int c)' | Check if character c (int format) is alphabetic | OK
+`int	isalpha(int c)` | Check if character c (int format) is alphabetic | OK
 int	isdigit(int c) | Check if character c (int format) is numeric | OK
 int	isalnum(int c) | Check if character c (int format) is alphanumeric | OK
 int	isascii(int c) | Check if character c (int format) is ASCII | OK
