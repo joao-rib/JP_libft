@@ -39,7 +39,7 @@ ft_strdup | `char	*ft_strdup(const char *src)` | Creates new string as a duplica
 
 Function | Format | Description | Return | Status
 --- | --- | --- | --- | ---
-ft_atoi | `int	ft_atoi(const char *str)` | Converts written number from a string str into int format | The desired number | OK
+ft_atoi | `int	ft_atoi(const char *str)` | Converts written number from a string str into int format | The desired number, or 0 if it doesn-t exist | OK
 ft_calloc | `void	*ft_calloc(size_t nmemb, size_t size)` | Allocates memory to an array of nmemb elements of "size" bytes each. [requires malloc] | Pointer to memory block | OK
 
 ## PART 2
@@ -60,11 +60,11 @@ ft_putnbr_fd | `void	ft_putnbr_fd(int n, int fd)` | Prints n to the file descrip
 
 ## BONUS
 
-typedef struct s_list
+`typedef struct s_list
 {
 	void		*content;
 	struct s_list	*next;
-}			t_list;
+}			t_list;`
 
 Function | Format | Description | Return | Status
 --- | --- | --- | --- | ---
