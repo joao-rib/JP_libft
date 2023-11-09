@@ -93,5 +93,5 @@ ft_printf | ft_putnbr_fd | `int	ft_putnbr_fd(long n, int fd);` | Function now ac
 Function | Format | Description | Return | Status
 --- | --- | --- | --- | ---
 ft_printf | `int	ft_printf(const char *string, ...)` | Prints a string, converting a series of variables according to a specific cipher [requires va_ functions] | Printed length | OK, but lacks flag implementation
-ft_putnbr_ubase_fd [requires write] | `int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" | Printed length | OK
-ft_putnbr_lbase_fd [requires write] | `int	ft_putnbr_lbase_fd(unsigned long nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" | Printed length | OK
+ft_putnbr_ubase_fd | `int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" [requires write] | Printed length | OK
+ft_putnbr_lbase_fd | `int	ft_putnbr_lbase_fd(unsigned long nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" [requires write] | Printed length | OK
