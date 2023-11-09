@@ -77,3 +77,21 @@ ft_lstdelone | `void	 ft_lstdelone(t_list *lst, void (*del)(void *))` | Frees me
 ft_lstclear | `void	 ft_lstclear(t_list **lst, void (*del)(void *))` | Frees memory from current node's content in lst, as well as all following nodes, using the del function. List then points to NULL. [requires free] | - | OK
 ft_lstiter | `void	 ft_lstiter(t_list *lst, void (*f)(void *))` | Applies function f to each node in lst | - | OK
 ft_lstmap | `t_list	 *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))` | Applies function f to each node in lst, returning a new list with the results. Node content is freed with del wherever necessary. [requires malloc & free] | New list | OK
+
+## Later Additions
+
+### Altered/Improved Functions
+
+Reason | Function | Format | Modified
+--- | --- | --- | ---
+ft_printf | ft_putchar_fd | `int	ft_putchar_fd(char c, int fd);` | Function now returns int with value 1
+ft_printf | ft_putstr_fd | `int	ft_putstr_fd(char *str, int fd);` | Function now returns printed length. If str is NULL, function prints (null)
+ft_printf | ft_putnbr_fd | `int	ft_putnbr_fd(long n, int fd);` | Function now accepts numbers in "long" format, and returns printed length
+
+### New Functions
+
+Function | Format | Description | Return | Status
+--- | --- | --- | --- | ---
+ft_printf | `int	ft_printf(const char *string, ...)` | Prints a string, converting a series of variables according to a specific cipher [requires va_ functions] | Printed length | OK, but lacks flag implementation
+ft_putnbr_ubase_fd [requires write] | `int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" | Printed length | OK
+ft_putnbr_lbase_fd [requires write] | `int	ft_putnbr_lbase_fd(unsigned long nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" | Printed length | OK

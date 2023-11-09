@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joao-rib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 19:30:33 by joao-rib          #+#    #+#             */
-/*   Updated: 2023/07/25 09:56:09 by joao-rib         ###   ########.fr       */
+/*   Updated: 2023/07/23 17:54:04 by joao-rib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include "ft_printf.h"
 
-int	ft_putstr_fd(char *str, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	int	i;
+	long	nb;
+	char	c;
 
-	i = 0;
-	if (str)
+	nb = n;
+	if (n < 0)
 	{
-		while (str[i] != '\0')
-		{
-			write(fd, &str[i], 1);
-			i++;
-		}
+		write(fd, "-", 1);
+		nb *= -1;
 	}
-	else
-		i += write(fd, "(null)", 6);
-	return (i);
+	if (nb >= 10)
+	{
+		ft_putnbr_fd(nb / 10, fd);
+		nb %= 10;
+	}
+	c = nb + '0';
+	write(fd, &c, 1);
 }

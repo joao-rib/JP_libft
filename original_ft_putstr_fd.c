@@ -11,22 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include "ft_printf.h"
 
-int	ft_putstr_fd(char *str, int fd)
+void	ft_putstr_fd(char *str, int fd)
 {
 	int	i;
 
 	i = 0;
-	if (str)
+	while (str[i] != '\0')
 	{
-		while (str[i] != '\0')
-		{
-			write(fd, &str[i], 1);
-			i++;
-		}
+		write(fd, &str[i], 1);
+		i++;
 	}
-	else
-		i += write(fd, "(null)", 6);
-	return (i);
 }
