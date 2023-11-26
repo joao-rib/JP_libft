@@ -87,6 +87,7 @@ Reason | Function | Format | Modified
 ft_printf | ft_putchar_fd | `int	ft_putchar_fd(char c, int fd);` | Function now returns int with value 1
 ft_printf | ft_putstr_fd | `int	ft_putstr_fd(char *str, int fd);` | Function now returns printed length. If str is NULL, function prints (null)
 ft_printf | ft_putnbr_fd | `int	ft_putnbr_fd(long n, int fd);` | Function now accepts numbers in "long" format, and returns printed length
+get_next_line | ft_strchr | `char	*ft_strchr(const char *str, int c)` | Function now returns 0 on error
 
 ### New Functions
 
@@ -95,3 +96,4 @@ Function | Format | Description | Return | Status
 ft_printf | `int	ft_printf(const char *string, ...)` | Prints a string, converting a series of variables according to a specific cipher [requires va_ functions] | Printed length | OK, but lacks flag implementation
 ft_putnbr_ubase_fd | `int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" [requires write] | Printed length | OK
 ft_putnbr_lbase_fd | `int	ft_putnbr_lbase_fd(unsigned long nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" [requires write] | Printed length | OK
+ft_strbuild | `char	*ft_strbuild(char *s1, const char *s2)` | Based on strjoin. Concatenates s1 and s2 into a new string. Allows s1 to be modified. [requires malloc] | New joined string | OK

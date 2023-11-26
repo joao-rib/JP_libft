@@ -17,6 +17,8 @@ char	*ft_strchr(const char *str, int c)
 	size_t	i;
 
 	i = 0;
+	if (!str)
+		return (0);
 	while (i <= ft_strlen(str) || (unsigned char)c == '\0')
 	{
 		if (str[i] == (unsigned char)c)
