@@ -60,12 +60,6 @@ ft_putnbr_fd | `void	ft_putnbr_fd(int n, int fd)` | Prints n to the file descrip
 
 ## BONUS
 
-`typedef struct s_list
-{
-	void		*content;
-	struct s_list	*next;
-}			t_list;`
-
 Function | Format | Description | Return | Status
 --- | --- | --- | --- | ---
 ft_lstnew | `t_list	*ft_lstnew(void *content)` | Creates new node with "content". "next" node becomes NULL. [requires malloc] | The new node | OK
