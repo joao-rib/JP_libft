@@ -82,6 +82,8 @@ ft_printf | ft_putchar_fd | `int	ft_putchar_fd(char c, int fd);` | Function now 
 ft_printf | ft_putstr_fd | `int	ft_putstr_fd(char *str, int fd);` | Function now returns printed length. If str is NULL, function prints (null)
 ft_printf | ft_putnbr_fd | `int	ft_putnbr_fd(long n, int fd);` | Function now accepts numbers in "long" format, and returns printed length
 get_next_line | ft_strchr | `char	*ft_strchr(const char *str, int c)` | Function now returns 0 on error
+push_swap | ft_isdigit | `bool	ft_isdigit(int c)` | Function now returns a boolean value
+push_swap | ft_lstadd_back | `void	ft_lstadd_back(t_stack **lst, t_stack *new)` | Function now considers a 'prev' pointer
 
 ### New Functions
 
@@ -91,3 +93,7 @@ ft_printf | `int	ft_printf(const char *string, ...)` | Prints a string, converti
 ft_putnbr_ubase_fd | `int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" [requires write] | Printed length | OK
 ft_putnbr_lbase_fd | `int	ft_putnbr_lbase_fd(unsigned long nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" [requires write] | Printed length | OK
 ft_strbuild | `char	*ft_strbuild(char *s1, const char *s2)` | Based on strjoin. Concatenates s1 and s2 into a new string. Allows s1 to be modified. [requires malloc] | New joined string | OK
+ft_atol | `long	ft_atol(const char *str)`  | Converts written number from a string str into long format | The desired number, or 0 if there is none | OK
+ft_str_cmp | `bool	ft_str_cmp(const char *s1, const char *s2)` | Checks if strings s1 and s2 are identical | Boolean | OK
+ft_rptcheck_str | `bool	ft_rptcheck_str(char **str)` | Checks if an array of strings str has any repeated strings | Boolean | OK
+ft_smaller_int | `int	ft_smaller_int(int n1, int n2)` | Determines which value is lowest between n1 and n2 | The smaller value | OK
