@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joao-rib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-bool	ft_isascii(int c)
+int	ft_isprint(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (true);
+	if (c >= 32 && c <= 126)
+		return (1);
 	else
-		return (false);
+		return (0);
 }

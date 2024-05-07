@@ -84,6 +84,12 @@ ft_printf | ft_putnbr_fd | `int	ft_putnbr_fd(long n, int fd);` | Function now ac
 get_next_line | ft_strchr | `char	*ft_strchr(const char *str, int c)` | Function now returns 0 on error
 push_swap | ft_isdigit | `bool	ft_isdigit(int c)` | Function now returns a boolean value
 push_swap | ft_lstadd_back | `void	ft_lstadd_back(t_stack **lst, t_stack *new)` | Function now considers a 'prev' pointer
+revision | ft_isalpha | `bool	ft_isalpha(int c)` | Function now returns a boolean value
+revision | ft_isalnum | `bool	ft_isalnum(int c)` | Function now returns a boolean value
+revision | ft_isascii | `bool	ft_isascii(int c)` | Function now returns a boolean value
+revision | ft_isprint | `bool	ft_isprint(int c)` | Function now returns a boolean value
+revision | ft_lstnew | `t_list	*ft_lstnew(void *content)` | Function now considers a 'prev' pointer
+revision | ft_lstadd_front | `void	ft_lstadd_front(t_list **lst, t_list *new)` | Function now considers a 'prev' pointer
 
 ### New Functions
 

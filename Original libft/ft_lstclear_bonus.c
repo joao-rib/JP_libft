@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joao-rib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,10 +12,17 @@
 
 #include "libft.h"
 
-bool	ft_isascii(int c)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if (c >= 0 && c <= 127)
-		return (true);
-	else
-		return (false);
+	t_list	*buff;
+
+	if (lst && del)
+	{
+		while (*lst)
+		{
+			buff = (*lst)->next;
+			ft_lstdelone(*lst, del);
+			*lst = buff;
+		}
+	}
 }

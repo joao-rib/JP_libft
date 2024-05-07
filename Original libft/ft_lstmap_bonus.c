@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joao-rib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,10 +12,28 @@
 
 #include "libft.h"
 
-bool	ft_isascii(int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (c >= 0 && c <= 127)
-		return (true);
-	else
-		return (false);
+	t_list	*destlist;
+	t_list	*dest;
+	void	*cont;
+
+	destlist = 0;
+	if (lst && f && del)
+	{
+		while (lst)
+		{
+			cont = f(lst->content);
+			dest = ft_lstnew(cont);
+			if (!dest)
+			{
+				del(cont);
+				ft_lstclear(&destlist, del);
+				return (NULL);
+			}
+			ft_lstadd_back(&destlist, dest);
+			lst = lst->next;
+		}
+	}
+	return (destlist);
 }

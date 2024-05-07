@@ -1,21 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_rptcheck_str.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joao-rib <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: joao-rib <joao-rib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 19:30:33 by joao-rib          #+#    #+#             */
-/*   Updated: 2023/07/30 23:01:12 by joao-rib         ###   ########.fr       */
+/*   Updated: 2024/04/16 14:41:58 by joao-rib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../Header/push_swap.h"
 
-bool	ft_isascii(int c)
+bool	ft_rptcheck_str(char **str)
 {
-	if (c >= 0 && c <= 127)
-		return (true);
-	else
-		return (false);
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 1;
+	if (!str)
+		return (0);
+	while (str[i])
+	{
+		while (str[j])
+		{
+			if (ft_str_cmp(str[i], str[j]))
+				return (true);
+			j++;
+		}
+		i++;
+		j = i + 1;
+	}
+	return (false);
 }

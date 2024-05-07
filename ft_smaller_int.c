@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_smaller_int.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joao-rib <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: joao-rib <joao-rib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 19:30:33 by joao-rib          #+#    #+#             */
-/*   Updated: 2023/07/30 23:01:12 by joao-rib         ###   ########.fr       */
+/*   Updated: 2024/04/23 12:30:46 by joao-rib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../Header/push_swap.h"
 
-bool	ft_isascii(int c)
+int	ft_smaller_int(int n1, int n2)
 {
-	if (c >= 0 && c <= 127)
-		return (true);
+	if (n1 <= n2)
+		return (n1);
 	else
-		return (false);
+		return (n2);
 }

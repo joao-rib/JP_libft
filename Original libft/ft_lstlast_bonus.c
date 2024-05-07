@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joao-rib <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,10 +12,14 @@
 
 #include "libft.h"
 
-bool	ft_isascii(int c)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if (c >= 0 && c <= 127)
-		return (true);
-	else
-		return (false);
+	t_list	*ult;
+
+	if (!lst)
+		return (NULL);
+	ult = lst;
+	while (ult->next != NULL)
+		ult = ult->next;
+	return (ult);
 }
