@@ -6,11 +6,11 @@
 /*   By: joao-rib <joao-rib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 19:30:33 by joao-rib          #+#    #+#             */
-/*   Updated: 2024/04/16 14:45:20 by joao-rib         ###   ########.fr       */
+/*   Updated: 2024/05/07 17:29:13 by joao-rib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Header/push_swap.h"
+#include "libft.h"
 
 bool	ft_str_cmp(const char *s1, const char *s2)
 {

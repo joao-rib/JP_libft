@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_printf.h"
+//#include "ft_printf.h"
 
 static int	repeat_chars(char *str, char t)
 {

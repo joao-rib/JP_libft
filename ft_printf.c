@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_printf.h"
+//#include "ft_printf.h"
 //#include <stdio.h>
 
 static int	prf_ptr(unsigned long v)

@@ -6,15 +6,15 @@
 /*   By: joao-rib <joao-rib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 19:30:33 by joao-rib          #+#    #+#             */
-/*   Updated: 2024/04/15 12:13:04 by joao-rib         ###   ########.fr       */
+/*   Updated: 2024/05/07 17:28:36 by joao-rib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Header/push_swap.h"
+#include "libft.h"
 
-void	ft_lstadd_back(t_stack **lst, t_stack *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_stack	*ultima;
+	t_list	*ultima;
 
 	if (lst && new)
 	{

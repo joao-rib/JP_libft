@@ -6,11 +6,11 @@
 /*   By: joao-rib <joao-rib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 19:30:33 by joao-rib          #+#    #+#             */
-/*   Updated: 2024/04/29 11:12:59 by joao-rib         ###   ########.fr       */
+/*   Updated: 2024/05/07 17:29:16 by joao-rib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Header/push_swap.h"
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
