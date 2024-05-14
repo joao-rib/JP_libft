@@ -103,3 +103,4 @@ ft_atol | `long	ft_atol(const char *str)`  | Converts written number from a stri
 ft_str_cmp | `bool	ft_str_cmp(const char *s1, const char *s2)` | Checks if strings s1 and s2 are identical | Boolean | OK
 ft_rptcheck_str | `bool	ft_rptcheck_str(char **str)` | Checks if an array of strings str has any repeated strings | Boolean | OK
 ft_smaller_int | `int	ft_smaller_int(int n1, int n2)` | Determines which value is lowest between n1 and n2 | The smaller value | OK
+ft_print_error | `int	ft_print_error(char *str)` | Prints str as an error message, without exiting the program. [requires ft_printf] | 1
