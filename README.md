@@ -98,6 +98,7 @@ Function | Format | Description | Return | Status
 ft_printf | `int	ft_printf(const char *string, ...)` | Prints a string, converting a series of variables according to a specific cipher [requires va_ functions] | Printed length | OK, but lacks flag implementation
 ft_putnbr_ubase_fd | `int	ft_putnbr_ubase_fd(unsigned int nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" [requires write] | Printed length | OK
 ft_putnbr_lbase_fd | `int	ft_putnbr_lbase_fd(unsigned long nbr, char *base, int fd)` | Prints nbr to the file descriptor fd, in numerical "base" [requires write] | Printed length | OK
+get_next_line | `char	*get_next_line(int fd)` | This function returns a line that can be read from fd. Successive uses return the following lines. | The next line | OK
 ft_strbuild | `char	*ft_strbuild(char *s1, const char *s2)` | Based on strjoin. Concatenates s1 and s2 into a new string. Allows s1 to be modified. [requires malloc] | New joined string | OK
 ft_atol | `long	ft_atol(const char *str)`  | Converts written number from a string str into long format | The desired number, or 0 if there is none | OK
 ft_str_cmp | `bool	ft_str_cmp(const char *s1, const char *s2)` | Checks if strings s1 and s2 are identical | Boolean | OK
