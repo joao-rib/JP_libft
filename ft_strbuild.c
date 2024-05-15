@@ -15,6 +15,8 @@
 char	*ft_strbuild(char *s1, const char *s2)
 {
 	char	*joined;
+	size_t	l;
+	size_t	l1;
 
 	if (!s1)
 	{
@@ -23,11 +25,14 @@ char	*ft_strbuild(char *s1, const char *s2)
 	}
 	if (!s1 || !s2)
 		return (NULL);
-	joined = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	l1 = ft_strlen(s1);
+	l = l1 + ft_strlen(s2) + 1;
+	joined = malloc(l * sizeof(char));
 	if (!joined)
 		return (NULL);
 	joined[0] = '\0';
-	ft_strlcat(joined, s1, ft_strlen(s1) + ft_strlen(s2) + 1);
-	ft_strlcat(joined, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
+	ft_strlcat(joined, s1, l);
+	ft_strlcat(joined, s2, l);
+	free(s1);
 	return (joined);
 }

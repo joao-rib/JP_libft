@@ -23,6 +23,11 @@
 # define DECIMAL "0123456789"
 # define HEXA_LOW "0123456789abcdef"
 # define HEXA_UPP "0123456789ABCDEF"
+//get_next_line
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 40
+# endif
+# define MAXFD 2000
 
 typedef struct s_list
 {
@@ -71,6 +76,7 @@ char	*ft_strtrim(const char *s1, const char *set);
 void	ft_striteri(char *str, void (*f)(unsigned int, char *));
 char	*ft_strmapi(const char *str, char (*f)(unsigned int, char));
 char	**ft_split(const char *s, char c);
+char	*get_next_line(int fd);
 
 // Arrays
 void	*ft_memcpy(void *dest, const void *src, size_t n);

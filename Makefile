@@ -2,7 +2,7 @@ NAME = libft.a
 CC = cc
 FLAGS = -Wall -Wextra -Werror
 RM = rm -fr
-SRC = ft*.c
+SRC = ft*.c get_next_line.c
 OBJ = obj/*.o
 
 all: $(NAME)
