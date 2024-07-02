@@ -60,6 +60,7 @@ char	*ft_itoa(int n);
 size_t	ft_strlen(const char *str);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
+int		ft_strchr_pos(const char *str, char c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 bool	ft_str_cmp(const char *s1, const char *s2);
@@ -73,6 +74,7 @@ char	*ft_strbuild(char *s1, const char *s2);
 char	*ft_substr(const char *str, unsigned int start, size_t len);
 // Strings - Complex Operations
 char	*ft_strtrim(const char *s1, const char *set);
+char	**ft_strarrdup(char **src);
 void	ft_striteri(char *str, void (*f)(unsigned int, char *));
 char	*ft_strmapi(const char *str, char (*f)(unsigned int, char));
 char	**ft_split(const char *s, char c);
