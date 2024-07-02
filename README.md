@@ -107,4 +107,4 @@ ft_smaller_int | `int	ft_smaller_int(int n1, int n2)` | Determines which value i
 ft_print_error | `int	ft_print_error(char *str)` | Prints str as an error message, without exiting the program. [requires ft_printf] | 1
 flood_fill | `void	flood_fill(char **tab, t_point size, t_point begin)` | Replaces multiple characters of tab with "F" in a flood pattern, starting with begin. Only affects input size | - | OK
 ft_strarrdup | `char	**ft_strarrdup(char **src)` | Creates new string array as a duplicate of src [requires malloc] | New string array | OK
-ft_strchr_pos | `int	ft_strchr_pos(const char *str, int c)` | Returns position of first instance of char c in str | Position as an int | OK
+ft_strchr_pos | `int	ft_strchr_pos(const char *str, int c)` | Returns position of first instance of char c in str (if c is not found, returns -1) | Position of c in str, or -1 | OK
