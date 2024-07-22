@@ -104,7 +104,8 @@ ft_atol | `long	ft_atol(const char *str)`  | Converts written number from a stri
 ft_str_cmp | `bool	ft_str_cmp(const char *s1, const char *s2)` | Checks if strings s1 and s2 are identical | Boolean | OK
 ft_rptcheck_str | `bool	ft_rptcheck_str(char **str)` | Checks if an array of strings str has any repeated strings | Boolean | OK
 ft_smaller_int | `int	ft_smaller_int(int n1, int n2)` | Determines which value is lowest between n1 and n2 | The smaller value | OK
-ft_print_error | `int	ft_print_error(char *str)` | Prints str as an error message, without exiting the program. [requires ft_printf] | 1
+ft_error_msg | `int	ft_error_msg(char *str)` | Prints str as an error message, without exiting the program. [requires ft_printf] | 1 | OK
 flood_fill | `void	flood_fill(char **tab, t_point size, t_point begin)` | Replaces multiple characters of tab with "F" in a flood pattern, starting with begin. Only affects input size | - | OK
 ft_strarrdup | `char	**ft_strarrdup(char **src)` | Creates new string array as a duplicate of src [requires malloc] | New string array | OK
 ft_strchr_pos | `int	ft_strchr_pos(const char *str, int c)` | Returns position of first instance of char c in str (if c is not found, returns -1) | Position of c in str, or -1 | OK
+ft_error_exit | `void	ft_error_exit(char *str)` | Prints str as an error message, then exits the program. [requires exit] | - | OK

@@ -55,6 +55,10 @@ bool	ft_isdigit(int c);
 bool	ft_isprint(int c);
 int		ft_smaller_int(int n1, int n2);
 
+// Error Handling
+int		ft_error_msg(char *str);
+void	ft_error_exit(char *str);
+
 // Conversions
 int		ft_tolower(int c);
 int		ft_toupper(int c);
