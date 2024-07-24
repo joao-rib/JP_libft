@@ -109,3 +109,4 @@ flood_fill | `void	flood_fill(char **tab, t_point size, t_point begin)` | Replac
 ft_strarrdup | `char	**ft_strarrdup(char **src)` | Creates new string array as a duplicate of src [requires malloc] | New string array | OK
 ft_strchr_pos | `int	ft_strchr_pos(const char *str, int c)` | Returns position of first instance of char c in str (if c is not found, returns -1) | Position of c in str, or -1 | OK
 ft_error_exit | `void	ft_error_exit(char *str)` | Prints str as an error message, then exits the program. [requires exit] | - | OK
+ft_free_matrix | `void	ft_free_matrix(char **tab))` | Frees all of the memory from tab, includig each individual string. [requires free] | - | OK
