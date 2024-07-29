@@ -110,3 +110,4 @@ ft_strarrdup | `char	**ft_strarrdup(char **src)` | Creates new string array as a
 ft_strchr_pos | `int	ft_strchr_pos(const char *str, int c)` | Returns position of first instance of char c in str (if c is not found, returns -1) | Position of c in str, or -1 | OK
 ft_error_exit | `void	ft_error_exit(char *str)` | Prints str as an error message, then exits the program. [requires exit] | - | OK
 ft_free_matrix | `void	ft_free_matrix(char **tab))` | Frees all of the memory from tab, includig each individual string. [requires free] | - | OK
+ft_isdelim | `bool	ft_isdelim(int c)` | Check if character c (int format) is a typical word delimiter | Boolean | OK
