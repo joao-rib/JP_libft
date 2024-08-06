@@ -106,8 +106,9 @@ ft_rptcheck_str | `bool	ft_rptcheck_str(char **str)` | Checks if an array of str
 ft_smaller_int | `int	ft_smaller_int(int n1, int n2)` | Determines which value is lowest between n1 and n2 | The smaller value | OK
 ft_error_msg | `int	ft_error_msg(char *str)` | Prints str as an error message, without exiting the program. [requires ft_printf] | 1 | OK
 flood_fill | `void	flood_fill(char **tab, t_point size, t_point begin)` | Replaces multiple characters of tab with "F" in a flood pattern, starting with begin. Only affects input size | - | OK
-ft_strarrdup | `char	**ft_strarrdup(char **src)` | Creates new string array as a duplicate of src [requires malloc] | New string array | OK
+ft_matrix_dup | `char	**ft_matrix_dup(char **src)` | Creates new string array as a duplicate of src [requires malloc] | New string array | OK
 ft_strchr_pos | `int	ft_strchr_pos(const char *str, int c)` | Returns position of first instance of char c in str (if c is not found, returns -1) | Position of c in str, or -1 | OK
 ft_error_exit | `void	ft_error_exit(char *str)` | Prints str as an error message, then exits the program. [requires exit] | - | OK
 ft_free_matrix | `void	ft_free_matrix(char **tab))` | Frees all of the memory from tab, includig each individual string. [requires free] | - | OK
 ft_isdelim | `bool	ft_isdelim(int c)` | Check if character c (int format) is a typical word delimiter | Boolean | OK
+ft_matrix_add_line | `char	**ft_matrix_add_line(char **src, char *newline)` | Creates new string array as a duplicate of src, while appending newline at the end. src is freed. [requires malloc] | New string array with appended line | OK
