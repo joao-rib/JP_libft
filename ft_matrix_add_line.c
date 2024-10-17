@@ -29,7 +29,6 @@ char	**ft_matrix_add_line(char **src, char *newline)
 	char	**dest;
 	int		w;
 
-
 	w = 0;
 	if (src)
 	{
@@ -52,6 +51,7 @@ char	**ft_matrix_add_line(char **src, char *newline)
 			return (free_all(dest, w + 1));
 		w--;
 	}
-	free_all(src, 0);
+	if (src)
+		free_all(src, 0);
 	return (dest);
 }
