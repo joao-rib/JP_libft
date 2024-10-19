@@ -112,3 +112,4 @@ ft_error_exit | `void	ft_error_exit(char *str)` | Prints str as an error message
 ft_free_matrix | `void	ft_free_matrix(char **tab))` | Frees all of the memory from tab, includig each individual string. [requires free] | - | OK
 ft_isdelim | `bool	ft_isdelim(int c)` | Check if character c (int format) is a typical word delimiter | Boolean | OK
 ft_matrix_add_line | `char	**ft_matrix_add_line(char **src, char *newline)` | Creates new string array as a duplicate of src, while appending newline at the end. src is freed. [requires malloc] | New string array with appended line | OK
+ft_str_repl_chr | `char	*ft_str_repl_chr(char *str, char old, char new, int times)` | In string str, replaces instances of old with new, starting from the left, as many times as desired. If "times" is too big, replaces every instance. If 0 or lower, returns NULL | Modified string | OK
