@@ -109,9 +109,10 @@ flood_fill | `void	flood_fill(char **tab, t_point size, t_point begin)` | Replac
 ft_matrix_dup | `char	**ft_matrix_dup(char **src)` | Creates new string array as a duplicate of src [requires malloc] | New string array | OK
 ft_strchr_pos | `int	ft_strchr_pos(const char *str, int c)` | Returns position of first instance of char c in str (if c is not found, returns -1) | Position of c in str, or -1 | OK
 ft_error_exit | `void	ft_error_exit(char *str)` | Prints str as an error message, then exits the program. [requires exit] | - | OK
-ft_free_matrix | `void	ft_free_matrix(char **tab))` | Frees all of the memory from tab, includig each individual string. [requires free] | - | OK
+ft_free_matrix | `void	ft_free_matrix(char **tab)` | Frees all of the memory from tab, includig each individual string. [requires free] | - | OK
 ft_isdelim | `bool	ft_isdelim(int c)` | Check if character c (int format) is a typical word delimiter | Boolean | OK
 ft_matrix_add_line | `char	**ft_matrix_add_line(char **src, char *newline)` | Creates new string array as a duplicate of src, while appending newline at the end. src is freed. [requires malloc] | New string array with appended line | OK
 ft_str_repl_chr | `char	*ft_str_repl_chr(char *str, char old, char new, size_t times)` | In string str, replaces instances of old with new, starting from the left, as many times as desired. If "times" is too big, replaces every instance | Modified string | OK
 ft_strnstr_pos | `size_t	ft_strnstr_pos(const char *big, const char *little, size_t len)` | If string little exists in big within the first len characters, returns the numerical position of the beginning of little. If it does not exist, returns 0 | Position of little in big, or 0 | OK
 ft_str_repl_seg | `char	*ft_str_repl_seg(const char *str, char *old, char *new)` | In string str, replaces the first instance of old with new, returning a new modified string. If the procedure is impossible, returns NULL. [requires malloc] | New modified string | OK
+ft_free_intmatrix | `void	ft_free_intmatrix(int **mat, size_t size)` | Frees all of the memory from mat, includig each individual int array. [requires free] | - | OK
