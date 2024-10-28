@@ -21,15 +21,17 @@ char	*ft_strbuild(char *s1, const char *s2)
 	if (!s1)
 	{
 		s1 = malloc(1 * sizeof(char));
+		if (!s1)
+			return (NULL);
 		s1[0] = '\0';
 	}
-	if (!s1 || !s2)
-		return (NULL);
+	if (!s2)
+		return (s1);
 	l1 = ft_strlen(s1);
 	l = l1 + ft_strlen(s2) + 1;
 	joined = malloc(l * sizeof(char));
 	if (!joined)
-		return (NULL);
+		return (s1);
 	joined[0] = '\0';
 	ft_strlcat(joined, s1, l);
 	ft_strlcat(joined, s2, l);
