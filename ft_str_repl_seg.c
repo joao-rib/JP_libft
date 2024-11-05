@@ -29,12 +29,8 @@ static char	*replace_short(const char *str, char *old, char *new, size_t len)
 	{
 		if (i == b)
 		{
-			b = ft_strlen(new);
-			while (j < b)
-			{
-				str2[i + j] = new[j];
-				j++;
-			}
+			j = ft_strlen(new);
+			ft_memcpy(&str2[i], new, j);
 			b = ft_strlen(old);
 			i += b;
 			j = b - j;
@@ -62,12 +58,8 @@ static char	*replace_long(const char *str, char *old, char *new, size_t len)
 	{
 		if (i == b)
 		{
-			b = ft_strlen(new);
-			while (j < b)
-			{
-				str2[i + j] = new[j];
-				j++;
-			}
+			j = ft_strlen(new);
+			ft_memcpy(&str2[i], new, j);
 			b = ft_strlen(old);
 			i += b;
 			j -= b;

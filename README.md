@@ -109,7 +109,7 @@ flood_fill | `void	flood_fill(char **tab, t_point size, t_point begin)` | Replac
 ft_matrix_dup | `char	**ft_matrix_dup(char **src)` | Creates new string array as a duplicate of src [requires malloc] | New string array | OK
 ft_strchr_pos | `int	ft_strchr_pos(const char *str, int c)` | Returns position of first instance of char c in str (if c is not found, returns -1) | Position of c in str, or -1 | OK
 ft_error_exit | `void	ft_error_exit(char *str)` | Prints str as an error message, then exits the program. [requires exit] | - | OK
-ft_free_matrix | `void	ft_free_matrix(char **tab)` | Frees all of the memory from tab, includig each individual string. [requires free] | - | OK
+ft_free_matrix | `void	ft_free_matrix(char **tab)` | Frees all of the memory from tab, including each individual string. [requires free] | - | OK
 ft_isdelim | `bool	ft_isdelim(int c)` | Check if character c (int format) is a typical word delimiter | Boolean | OK
 ft_matrix_add_line | `char	**ft_matrix_add_line(char **src, char *newline)` | Creates new string array as a duplicate of src, while appending newline at the end. src is freed. [requires malloc] | New string array with appended line | OK
 ft_str_repl_chr | `char	*ft_str_repl_chr(char *str, char old, char new, size_t times)` | In string str, replaces instances of old with new, starting from the left, as many times as desired. If "times" is too big, replaces every instance | Modified string | OK
