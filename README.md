@@ -116,3 +116,4 @@ ft_str_repl_chr | `char	*ft_str_repl_chr(char *str, char old, char new, size_t t
 ft_strnstr_pos | `size_t	ft_strnstr_pos(const char *big, const char *little, size_t len)` | If string little exists in big within the first len characters, returns the numerical position of the beginning of little. If it does not exist, returns 0 | Position of little in big, or 0 | OK
 ft_str_repl_seg | `char	*ft_str_repl_seg(const char *str, char *old, char *new)` | In string str, replaces the first instance of old with new, returning a new modified string. If the procedure is impossible, returns NULL. [requires malloc] | New modified string | OK
 ft_free_intmatrix | `void	ft_free_intmatrix(int **mat, size_t size)` | Frees all of the memory from mat, includig each individual int array. [requires free] | - | OK
+ft_isemptystr | `bool	ft_isemptystr(char *str)` | Checks if string str is entirely made of whitespace | Boolean | OK

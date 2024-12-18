@@ -56,6 +56,7 @@ bool	ft_isascii(int c);
 bool	ft_isdigit(int c);
 bool	ft_isprint(int c);
 bool	ft_isdelim(int c);
+bool	ft_isemptystr(char *str);
 int		ft_smaller_int(int n1, int n2);
 
 // Error Handling
